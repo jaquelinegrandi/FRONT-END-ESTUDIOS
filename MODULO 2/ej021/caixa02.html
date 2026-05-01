@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(120, 120, 120);
+            margin: 0px;
+        }
+
+        header {
+            background-color: beige;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: aquamarine;
+            padding: 3px;
+            box-shadow: 1px 1px 1px 1px rgb(71, 141, 118);
+
+            /* inset = sombra interna
+            primer numero es sombra de izquierda a derecha, si es numero positivo se va a la derecha, negativo va a la izquierda
+            segundo numero es sombra de arriba o abajo, si el numero es positivo se va abajo, si el numero es negativo se va para arriba
+            tercer numero es el blur
+            y el cuarto es spread
+            */
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        article {
+            background-color: aquamarine;
+            padding: 1px;
+            text-align: center;
+        }
+        aside {
+            text-align: right;
+        }
+        main {
+            background-color: beige;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!--div are boxes and span are inline boxes-->
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat consequatur ex harum placeat beatae, cupiditate iure corrupti quia, distinctio quod rem numquam quaerat dolor aliquid delectus voluptate hic, at in?</p>
+                <aside>
+                    <p>Artigo escrito por John Doe</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Deselvolvido pelo cursoemvideo</p>
+    </footer>
+    <div id='bola'></div>
+</body>
+</html>

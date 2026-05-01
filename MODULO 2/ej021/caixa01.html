@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        h1 {
+            background-color: aquamarine;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+        /* border: width > style > color, this is a shorthand for the three border thing.*/
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        
+        /* padding: top > right > bottom, left. this is a shorthand for padding.
+        
+        Si pongo solo uno, eso se va a aplicar para todos los lados, si pongo dos, el primero se va a aplicar para top y bottom y el segundo se aplica para left and right*/
+
+            margin: auto;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+        /* margin: top > right > bottom, left. this is a shorthand for magin.*/
+        
+            
+        }
+
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos tambem sao exemplos de box-level, mas os <a href="#">links sao exemplos de caixas inline-level</a>. Vamosver como tudo isso funciona.</p>
+</body>
+</html>
