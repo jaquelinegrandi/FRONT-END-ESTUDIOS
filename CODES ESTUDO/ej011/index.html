@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tenta abrir esse site em varios disposiveis diferentes ou simplesmente aumente ou diminua o tamanha do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p300.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/m700.png" type="image/png">
+        <img src="imagens/g1000.png" alt="imagen flexivel">
+    </picture>
+<h1>Reproduzindo Audios</h1>
+<p>Vamos aprender a reproduzir audios em HTML. <br>
+    <audio src="midia/Sunflower_20250717_0129.mp3" controls autoplay></audio>
+    <!--MP3, WAV, OGG, estos son los formatos compatibles para audios-->
+</p>
+<p>Otra manera de poner el audio es este:
+    &lt;audio&gt; &lt;source src. en la sección media hacemos ctrl + space y escogemos la media y en type ponemos audio/mpeg, audio/wav o audio/ogg dependiendo del formato del audio. y cerramos con &lt;/audio&gt; <br>
+<audio preload="metadata" autoplay controls loop>
+    <source src="midia/Sunflower_20250717_0129.mp3" type="audio/mpeg">
+    <source src="midia/Sunflower_20250717_0129.wav" type="audio/wav">
+    <source src="midia/Sunflower_20250717_0129.ogg" type="audio/ogg">
+</audio>
+<!--Se va a intentar leer por orden. Primer intentará acceder al mpeg/mp3, si no funciona, iré al siguiente y así hasta ogg-->
+</p>
+<p>Se va a intentar leer por orden. Primer intentará acceder al mpeg/mp3, si no funciona, iré al siguiente y así hasta ogg. Si ninguno funciona, infelizmente tu navegador no puede reproducir audio.
+ <a href="midia/Sunflower_20250717_0129.mp3"> Clique aquí para descargar el archivo MP3. </a>
+</p>
+</body>
+</html>

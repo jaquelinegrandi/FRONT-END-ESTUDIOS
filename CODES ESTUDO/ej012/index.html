@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML 5</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <H1>Inserindo videos hospedados localmente</H1>
+    <p>Este video está hospedado no meu propio servidor.</p>
+    <p>Este es un archivo .MOV</p>
+    <video src="midias/mivideo.MOV" width="500" controls poster="imagens/POSTAL.png"></video>
+    <p>Este es un archivo .webm</p>
+    <video src="midias/Mivideovimeo.webm" width="500" controls></video>
+    <p>Este es un archivo .mp4</p>
+    <video src="midias/Mivideovimeo.mp4" width="500" controls></video>
+    
+    <p>Hay otra forma de poner videos tambien. &lt;video&gt; source y despues escoges la midea que quieras. En orden del que quieras que primero aparezca.</p>
+    <video controls width="500" poster="imagens/POSTAL.png" loop>
+        <source src="midias/Mivideovimeo.mp4" type="video/mp4">
+        <source src="midias/mivideo.MOV" type="video/mov">
+        <source src="midias/Mivideovimeo.webm" type="video/webm">
+    </video>
+    <p>Se nao conseguir ver nenhum video, significa que teu dispositivo nao é compativel com o video. Voce pode fazer download do archivo video em mp4 clicando <a href="midias/Mivideovimeo.mp4"> aquí</a></p>
+
+    <h1>Inserindo videos no youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9Jrzt-CARz0?si=7spYDWeD8qubQsDZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
